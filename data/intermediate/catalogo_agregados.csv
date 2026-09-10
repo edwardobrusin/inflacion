@@ -1,0 +1,17 @@
+﻿Clave,Nombre,Nivel,Tipo,Componente,Subcomponente,Ponderador,Factor_Encadenamiento
+INPC_General,Índice General,General,General,General,General,99.99999999999997,1.3609522607803002
+Subyacente,Subyacente,Tipo,Subyacente,,,76.74153825112599,1.34848027876032
+No_Subyacente,No subyacente,Tipo,No Subyacente,,,23.25846174887399,1.39949948508367
+Mercancias,Mercancías,Componente,Subyacente,Mercancías,,37.53379198322066,1.41359646453096
+Servicios,Servicios,Componente,Subyacente,Servicios,,39.20774626790533,1.27817479869013
+Agropecuarios,Agropecuarios,Componente,No Subyacente,Agropecuarios,,10.657683224792716,1.6405160405669599
+Energeticos_Tarifas,Energéticos y tarifas autorizadas por el gobierno,Componente,No Subyacente,Energéticos y tarifas,,12.600778524081274,1.2264327364169099
+Alimentos_Bebidas_Tabaco,"Alimentos, bebidas y tabaco",Subcomponente,Subyacente,Mercancías,"Alimentos, bebidas y tabaco",17.214790670186918,1.5234684028484302
+Mercancias_No_Alimenticias,Mercancías no alimenticias,Subcomponente,Subyacente,Mercancías,Mercancías no alimenticias,20.31900131303374,1.2984308934250501
+Vivienda,Vivienda,Subcomponente,Subyacente,Servicios,Vivienda,18.05498972396312,1.1937742796225401
+Educacion,Educación (Colegiaturas),Subcomponente,Subyacente,Servicios,Educación (Colegiaturas),2.5206846289470755,1.2777223635897699
+Otros_Servicios,Otros servicios,Subcomponente,Subyacente,Servicios,Otros servicios,18.63207191499513,1.35429136667724
+Frutas_Verduras,Frutas y verduras,Subcomponente,No Subyacente,Agropecuarios,Frutas y verduras,4.778893344715312,1.8211472257925998
+Pecuarios,Pecuarios,Subcomponente,No Subyacente,Agropecuarios,Pecuarios,5.878789880077403,1.4937904425257
+Energeticos,Energéticos,Subcomponente,No Subyacente,Energéticos y tarifas,Energéticos,8.045800832675365,1.20702659960348
+Tarifas_Autorizadas,Tarifas autorizadas por el gobierno,Subcomponente,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno,4.554977691405909,1.27179032308771

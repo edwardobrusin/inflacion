@@ -1,0 +1,293 @@
+﻿Concepto,Ponderador,Factor_Encadenamiento,Tipo,Componente,Subcomponente
+Aceites y grasas vegetales comestibles,0.3499118153622659,1.732536247187,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Agua embotellada,0.4590421400904167,1.41380330676632,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Aguacate,0.21232508801803726,1.83184148103234,No Subyacente,Agropecuarios,Frutas y verduras
+Arroz,0.18913266693799144,1.5205700704883902,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Atún y sardina en lata,0.12765019281057954,1.3685464204146,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Azúcar,0.25086051068184656,1.6166790862779001,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Bebidas energéticas,0.01767485205314728,1.48137207783954,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Botanas elaboradas con cereales,0.07863183938135206,1.63577124605047,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Café soluble,0.13054849665108822,1.4972104981938699,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Café tostado,0.042028136815691834,1.42358190633484,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Calabacita,0.14162105875036085,2.14716851321578,No Subyacente,Agropecuarios,Frutas y verduras
+Camarón,0.08724969740935884,1.1091275280401,No Subyacente,Agropecuarios,Pecuarios
+Carne de cerdo,0.9321526900958852,1.44418328111127,No Subyacente,Agropecuarios,Pecuarios
+Carne de res,1.7027899780787625,1.39716102692143,No Subyacente,Agropecuarios,Pecuarios
+"Carnes secas, procesadas y otros embutidos",0.2049079873362946,1.4544204908000402,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Cebolla,0.23988872354029295,1.92785810827631,No Subyacente,Agropecuarios,Frutas y verduras
+Cereales en hojuelas,0.13863414324257528,1.5526963382812098,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Chayote,0.12920919482103072,4.2326122850106,No Subyacente,Agropecuarios,Frutas y verduras
+Chile poblano,0.050980036741424054,2.19559401493215,No Subyacente,Agropecuarios,Frutas y verduras
+Chile seco,0.0491235193341868,1.40962868642742,No Subyacente,Agropecuarios,Frutas y verduras
+Chile serrano,0.09281394750691851,1.75202902315572,No Subyacente,Agropecuarios,Frutas y verduras
+Chiles envasados,0.04004427282854454,1.7058951877516,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Chocolate líquido y para preparar bebida,0.019951629769543396,1.58754854787493,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Chocolate y productos de confitería,0.0459108295065111,1.49647097824325,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Chorizo,0.2665580450442463,1.46761741714366,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+"Cilantro, epazote y perejil",0.034464148494646976,1.8808804639741898,No Subyacente,Agropecuarios,Frutas y verduras
+Concentrados de pollo y sal,0.052337739171860354,1.57332082748539,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Concentrados para refrescos,0.023400561579651178,1.4844194541520699,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Crema y otros productos a base de leche,0.1760616143220854,1.59860158746232,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Durazno,0.012524110500151491,1.39101388047337,No Subyacente,Agropecuarios,Frutas y verduras
+Ejotes,0.03271711238439483,1.8897456482075798,No Subyacente,Agropecuarios,Frutas y verduras
+Frijol,0.41098516456945394,1.7439716656502302,No Subyacente,Agropecuarios,Frutas y verduras
+Frijol procesado,0.09065444723124484,1.3468528970303602,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Galletas,0.23482182879303357,1.59502937770314,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Gelatina en polvo,0.02011685354209668,1.46945488820136,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+"Gelatina, miel y mermeladas",0.03363623969684194,1.57928515032281,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Guayaba,0.05979430593340007,2.24890635817971,No Subyacente,Agropecuarios,Frutas y verduras
+Harinas de trigo,0.038373730571299586,1.75672175328087,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+"Helados, nieves y paletas de hielo",0.05705757323401879,1.55721381168041,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Huevo,1.0237227851167432,1.84776556661721,No Subyacente,Agropecuarios,Pecuarios
+Jamón,0.31143145112605014,1.4565161924088301,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Jitomate,0.7892010751991468,2.40547786320505,No Subyacente,Agropecuarios,Frutas y verduras
+Jugos o néctares envasados,0.17385713712931541,1.5480676266534499,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Leche en polvo,0.05049851679773331,1.4019694433870398,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Leche evaporada y condensada,0.019499194736110087,1.49806693456961,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Leche maternizada y alimentos para bebé,0.0672874131436989,1.49806693456961,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Leche pasteurizada y fresca,0.9891175259493806,1.50884730427957,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Leches de origen vegetal,0.01984029671191133,1.27609633574886,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Lechuga y col,0.14443066315707673,2.07457260065865,No Subyacente,Agropecuarios,Frutas y verduras
+Limón,0.09810881508390162,1.9580227522196099,No Subyacente,Agropecuarios,Frutas y verduras
+Maíz,0.24409211660928895,1.71263249795176,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Manteca de cerdo,0.026152063596824218,1.984660295969,No Subyacente,Agropecuarios,Pecuarios
+Mantequilla,0.029260774474538735,1.56446660540226,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Manzana,0.20660804234150593,1.19762476763718,No Subyacente,Agropecuarios,Frutas y verduras
+Masa y harinas de maíz,0.13120527237290502,1.6464836359147401,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Mayonesa y mostaza,0.07310844496499115,1.66285383082466,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Melón,0.04914295619256007,1.69821878911248,No Subyacente,Agropecuarios,Frutas y verduras
+Moles y salsas,0.07118265671618688,1.50581860677929,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Naranja,0.18753812084128185,2.3716212453370202,No Subyacente,Agropecuarios,Frutas y verduras
+Nopales,0.07244969697048827,1.65815622891209,No Subyacente,Agropecuarios,Frutas y verduras
+Otras conservas de frutas,0.01727637288023691,1.35708715818493,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Otras frutas,0.24365178592103848,1.81012144560711,No Subyacente,Agropecuarios,Frutas y verduras
+Otras legumbres secas,0.09199101191697344,1.50052796644011,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Otras verduras y legumbres,0.2594412370214351,2.0069013428582,No Subyacente,Agropecuarios,Frutas y verduras
+Otros chiles frescos,0.09098948179335949,1.80388105604343,No Subyacente,Agropecuarios,Frutas y verduras
+Otros condimentos,0.029069303863332008,1.40892678891175,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Otros pescados y mariscos en conserva,0.045443761225235295,1.26801711567884,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Otros quesos,0.1987917024557175,1.5265613175629802,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Pan blanco,0.26900672241306955,1.6942643934883401,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Pan de caja,0.19562583855778964,1.67264310091358,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Pan dulce,0.579491953383582,1.67050500891434,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Papa y otros tubérculos,0.32125999107200776,1.1681988492856,No Subyacente,Agropecuarios,Frutas y verduras
+Papas fritas,0.05421085425073715,1.55407190363102,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Papaya,0.08669421531999831,1.47835726055538,No Subyacente,Agropecuarios,Frutas y verduras
+Pasta para sopa,0.16834347201377736,1.75001218231239,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+"Pasteles, pastelillos y pan dulce empaquetado",0.0670676007464012,1.62769054794306,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Pastelillos y pasteles a granel,0.07700051196707176,1.5125171179377,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Pepino,0.05720452683902145,1.5982183223139699,No Subyacente,Agropecuarios,Frutas y verduras
+Pera,0.028229988832609364,1.36591444969649,No Subyacente,Agropecuarios,Frutas y verduras
+Pescado,0.2848169369382809,1.3594183851204,No Subyacente,Agropecuarios,Pecuarios
+Piña,0.058819939250391425,2.06402694218781,No Subyacente,Agropecuarios,Frutas y verduras
+Plátanos,0.26338602601849753,2.07181649513899,No Subyacente,Agropecuarios,Frutas y verduras
+Pollo,1.788313838011585,1.54776514134713,No Subyacente,Agropecuarios,Pecuarios
+Queso amarillo,0.01911885292837513,1.47709252381745,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Queso fresco,0.25924479195627365,1.55216397652079,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Queso manchego y Chihuahua,0.0966769815717287,1.53544013324334,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Queso Oaxaca y asadero,0.20970060243627697,1.5423492610968401,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Refrescos envasados,1.2334630110109175,1.5053831887707199,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Salchichas,0.1577050745785133,1.3943424427153999,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Sandía,0.038543590818542556,1.64815483642223,No Subyacente,Agropecuarios,Frutas y verduras
+Sopas instantáneas y puré de tomate,0.022340680909370667,1.6354008291875801,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Té,0.030237727584614134,1.3849027765566502,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Tocino,0.023802954155671838,1.4348049310275701,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Tomate verde,0.1449048696431898,1.3171427697812501,No Subyacente,Agropecuarios,Frutas y verduras
+Tortilla de maíz,1.8671950222763087,1.5563194907446398,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Tortillas de harina de trigo,0.10367278094647928,1.7016007218620002,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Tostadas,0.10934252137085529,1.61446983294656,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Uva,0.05484587440839875,1.25864411705919,No Subyacente,Agropecuarios,Frutas y verduras
+Verduras envasadas,0.07318759072090208,1.50140462069106,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Vísceras de res,0.033591890829963486,1.3529948353107901,No Subyacente,Agropecuarios,Pecuarios
+Yogurt,0.1272598632854553,1.57467254765807,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Zanahoria,0.11699603739656378,1.83432687297909,No Subyacente,Agropecuarios,Frutas y verduras
+Brandy,0.08654591186041403,1.38024868833089,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Cerveza,0.7680649303539526,1.33692146388465,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Cigarrillos,0.624303059034128,1.5526741712569299,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Otros licores,0.08122528408355505,1.41773220654689,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Ron,0.16432162111805834,1.59573368384011,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Tequila,0.29530596952829424,1.60108569090211,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Vino de mesa,0.27024351363554616,1.28169833962876,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Blusas y playeras para mujer,0.21727953175338185,1.18840652773833,Subyacente,Mercancías,Mercancías no alimenticias
+"Calcetas, medias y pantimedias",0.012360891551799416,1.3172165036592802,Subyacente,Mercancías,Mercancías no alimenticias
+Calcetines y calcetas para hombre,0.020031312627709092,1.1951716572742301,Subyacente,Mercancías,Mercancías no alimenticias
+Calcetines y calcetas para niños,0.026582884647527883,1.27313741438732,Subyacente,Mercancías,Mercancías no alimenticias
+Camisas y playeras para hombre,0.28593299962839824,1.26417738415736,Subyacente,Mercancías,Mercancías no alimenticias
+Camisas y playeras para niños,0.10156724413032912,1.2425240615269,Subyacente,Mercancías,Mercancías no alimenticias
+Pantalones para hombre,0.36157941651536146,1.2460049607444201,Subyacente,Mercancías,Mercancías no alimenticias
+Pantalones para mujer,0.28250192159083626,1.13481301238939,Subyacente,Mercancías,Mercancías no alimenticias
+Pantalones para niño,0.11667778082749745,1.14520499106141,Subyacente,Mercancías,Mercancías no alimenticias
+Ropa de abrigo,0.30390869806973025,1.1022468098512699,Subyacente,Mercancías,Mercancías no alimenticias
+Ropa interior para hombre,0.043988621253289326,1.32911145328175,Subyacente,Mercancías,Mercancías no alimenticias
+Ropa interior para mujer,0.09083615473538985,1.27627296418121,Subyacente,Mercancías,Mercancías no alimenticias
+"Ropa interior para niños, niñas y adolescentes",0.040109748098106364,1.2820826849075102,Subyacente,Mercancías,Mercancías no alimenticias
+Ropa para bebés,0.17833265033294182,1.22755487240542,Subyacente,Mercancías,Mercancías no alimenticias
+Traje para hombre,0.03222933150495525,1.1227506147196,Subyacente,Mercancías,Mercancías no alimenticias
+Uniformes escolares,0.19088601185463416,1.30754673858308,Subyacente,Mercancías,Mercancías no alimenticias
+Vestidos y faldas para mujer,0.13188871830615848,1.19791026239773,Subyacente,Mercancías,Mercancías no alimenticias
+"Vestidos, faldas y pantalones para niñas",0.2286803956749124,1.18718854248001,Subyacente,Mercancías,Mercancías no alimenticias
+Otras prendas de vestir para hombre,0.024665998822728966,1.20423454055709,Subyacente,Mercancías,Mercancías no alimenticias
+Otras prendas de vestir para mujer,0.04008554783170686,1.13588215130095,Subyacente,Mercancías,Mercancías no alimenticias
+Complementos de vestir,0.047691748379997456,1.19135677936277,Subyacente,Mercancías,Mercancías no alimenticias
+Servicio de lavandería,0.12581725631536675,1.34048997422331,Subyacente,Servicios,Otros servicios
+Servicio de tintorería,0.061292273092707385,1.36836726875814,Subyacente,Servicios,Otros servicios
+Sandalias y huaraches,0.07621470035358595,1.21506780302687,Subyacente,Mercancías,Mercancías no alimenticias
+Zapatos para hombre,0.18210426806609106,1.2574690357607299,Subyacente,Mercancías,Mercancías no alimenticias
+Zapatos para mujer,0.18535466021404828,1.23107663698492,Subyacente,Mercancías,Mercancías no alimenticias
+Zapatos para niños y niñas,0.1578661667024245,1.22951345771852,Subyacente,Mercancías,Mercancías no alimenticias
+Zapatos tenis,0.6886297548636651,1.22466836231205,Subyacente,Mercancías,Mercancías no alimenticias
+Derechos por el suministro de agua,0.8198491482842706,1.43314651067397,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Electricidad,1.1234973895284266,1.27186466336276,No Subyacente,Energéticos y tarifas,Energéticos
+Gas doméstico LP,1.4660707927276975,1.02203459787306,No Subyacente,Energéticos y tarifas,Energéticos
+Gas doméstico natural,0.12641769513375767,0.970554739360452,No Subyacente,Energéticos y tarifas,Energéticos
+Otros servicios relacionados con la vivienda,0.2999138463243631,1.3382631897317099,Subyacente,Servicios,Vivienda
+Productos para reparación menor de la vivienda,0.2646862301997629,1.40318166767429,Subyacente,Mercancías,Mercancías no alimenticias
+Renta de vivienda,2.788894043216645,1.19200343616095,Subyacente,Servicios,Vivienda
+"Servicios para el mantenimiento, reparación y seguridad de la vivienda",0.21730919231882007,1.3382631897317099,Subyacente,Servicios,Vivienda
+Vivienda propia,13.77419941350931,1.17809256799012,Subyacente,Servicios,Vivienda
+Aparatos de aire acondicionado,0.04854530947949849,1.14401850288381,Subyacente,Mercancías,Mercancías no alimenticias
+Artículos desechables y no duraderos,0.05014582958586193,1.42285928804869,Subyacente,Mercancías,Mercancías no alimenticias
+Artículos y utensilios para el hogar,0.01039800520839478,1.30130433965895,Subyacente,Mercancías,Mercancías no alimenticias
+Aspiradoras y otros aparatos para el hogar,0.040477484099399004,1.13222355985703,Subyacente,Mercancías,Mercancías no alimenticias
+Baterías de cocina,0.05506058672294797,1.2696368641951299,Subyacente,Mercancías,Mercancías no alimenticias
+Blanqueadores,0.28535544268693314,1.50881262837444,Subyacente,Mercancías,Mercancías no alimenticias
+"Cafeteras, tostadoras, ventiladores y otros electrodomésticos pequeños",0.058920534774896755,1.21403122176076,Subyacente,Mercancías,Mercancías no alimenticias
+Cerillos,0.03946478778561521,1.4847762082852,Subyacente,Mercancías,Mercancías no alimenticias
+Colchas y cobijas,0.07497618376113836,1.18885726947408,Subyacente,Mercancías,Mercancías no alimenticias
+Colchones,0.16327587679255565,1.18395408117296,Subyacente,Mercancías,Mercancías no alimenticias
+Comedores y antecomedores,0.04171013935892318,1.19171758139961,Subyacente,Mercancías,Mercancías no alimenticias
+Desodorantes ambientales,0.10167225154682377,1.44560150368565,Subyacente,Mercancías,Mercancías no alimenticias
+Detergentes,0.9387398756589761,1.4576258506951398,Subyacente,Mercancías,Mercancías no alimenticias
+"Escobas, fibras y estropajos",0.18463649686601225,1.44371143312487,Subyacente,Mercancías,Mercancías no alimenticias
+Estufas,0.07537094424487904,1.19125631136684,Subyacente,Mercancías,Mercancías no alimenticias
+Focos,0.07987578902343034,1.12088799142498,Subyacente,Mercancías,Mercancías no alimenticias
+Herramientas y equipo para el hogar,0.01941203632256176,1.38850923924738,Subyacente,Mercancías,Mercancías no alimenticias
+Horno de microondas,0.02543313243753582,1.160205990234,Subyacente,Mercancías,Mercancías no alimenticias
+Jabón para lavar,0.19071751895716552,1.59380847291212,Subyacente,Mercancías,Mercancías no alimenticias
+Lavadoras de ropa,0.13998887763895013,1.10543878979998,Subyacente,Mercancías,Mercancías no alimenticias
+Licuadoras,0.03333815998754959,1.23019376465604,Subyacente,Mercancías,Mercancías no alimenticias
+"Loza, cristalería y cubiertos",0.05298747287724031,1.3492259603163002,Subyacente,Mercancías,Mercancías no alimenticias
+Muebles diversos para el hogar,0.04688770205825256,1.21340329148249,Subyacente,Mercancías,Mercancías no alimenticias
+Muebles para cocina,0.03043141306615927,1.29298352361737,Subyacente,Mercancías,Mercancías no alimenticias
+Pilas,0.029693979242776475,1.47612871567662,Subyacente,Mercancías,Mercancías no alimenticias
+Plaguicidas,0.11308103320707129,1.51529653485014,Subyacente,Mercancías,Mercancías no alimenticias
+Planchas eléctricas,0.011853340798802289,1.16643075197826,Subyacente,Mercancías,Mercancías no alimenticias
+Recámaras,0.07880243488524002,1.25734142245076,Subyacente,Mercancías,Mercancías no alimenticias
+Refrigeradores,0.147034159470897,1.17276021226851,Subyacente,Mercancías,Mercancías no alimenticias
+Sábanas,0.03467433699345074,1.16743656446464,Subyacente,Mercancías,Mercancías no alimenticias
+Salas,0.060341439418900196,1.2480886253849,Subyacente,Mercancías,Mercancías no alimenticias
+Servicio doméstico,0.9746732285939828,1.3125822258290798,Subyacente,Servicios,Vivienda
+Servilletas de papel,0.16288355083633232,1.40001613973409,Subyacente,Mercancías,Mercancías no alimenticias
+Suavizantes y limpiadores,0.7520471338255753,1.52351019404161,Subyacente,Mercancías,Mercancías no alimenticias
+"Toallas, cortinas y otros blancos",0.05866182400745981,1.2332699874611999,Subyacente,Mercancías,Mercancías no alimenticias
+Utensilios de plástico para el hogar,0.042868365312972986,1.4052858941286102,Subyacente,Mercancías,Mercancías no alimenticias
+Velas y veladoras,0.08098546909314648,1.43717808542551,Subyacente,Mercancías,Mercancías no alimenticias
+Analgésicos,0.13098345328306302,1.42027518575868,Subyacente,Mercancías,Mercancías no alimenticias
+Análisis clínicos,0.2819601016850058,1.17386334978921,Subyacente,Servicios,Otros servicios
+Antibióticos,0.14901009567617868,1.4266122517492599,Subyacente,Mercancías,Mercancías no alimenticias
+Antigripales,0.07708027068727563,1.4826604961312901,Subyacente,Mercancías,Mercancías no alimenticias
+Antiinflamatorios,0.05289901258806299,1.38717242041607,Subyacente,Mercancías,Mercancías no alimenticias
+Atención médica durante el parto,0.10482703726224275,1.29992742628181,Subyacente,Servicios,Otros servicios
+Cardiovasculares,0.12163693787180344,1.31271236874941,Subyacente,Mercancías,Mercancías no alimenticias
+Consulta médica,0.597012648742708,1.32365549191643,Subyacente,Servicios,Otros servicios
+Consulta y prótesis dental,0.20899977869429198,1.34309701808332,Subyacente,Servicios,Otros servicios
+Dermatológicos,0.015916683825213284,1.38407538508359,Subyacente,Mercancías,Mercancías no alimenticias
+Expectorantes y descongestivos,0.03849471412795545,1.4421252516957,Subyacente,Mercancías,Mercancías no alimenticias
+Gastrointestinales,0.07068853825551766,1.29600658944493,Subyacente,Mercancías,Mercancías no alimenticias
+Hospitalización general,0.7084170947173887,1.3799929601849101,Subyacente,Servicios,Otros servicios
+Hospitalización parto,0.10150719890680687,1.33139228007051,Subyacente,Servicios,Otros servicios
+"Lentes, aparatos para sordera y ortopédicos",0.18211979546321544,1.27373211981304,Subyacente,Mercancías,Mercancías no alimenticias
+Material de curación,0.1448499787959677,1.4920544303525098,Subyacente,Mercancías,Mercancías no alimenticias
+Medicamentos para alergias,0.025963969828026248,1.36227593614556,Subyacente,Mercancías,Mercancías no alimenticias
+Medicamentos para diabetes,0.16074619927913508,1.5233409985318098,Subyacente,Mercancías,Mercancías no alimenticias
+Medicinas homeopáticas y naturistas,0.040005951682172074,1.3273035489893998,Subyacente,Mercancías,Mercancías no alimenticias
+Nutricionales,0.1261543015441191,1.38112420891928,Subyacente,Mercancías,Mercancías no alimenticias
+Operación quirúrgica,0.44559708967103295,1.30644847068803,Subyacente,Servicios,Otros servicios
+Otros medicamentos,0.34406527684111976,1.36443626578263,Subyacente,Mercancías,Mercancías no alimenticias
+Aceites lubricantes,0.08945157140816118,1.6819588205399898,Subyacente,Mercancías,Mercancías no alimenticias
+Acumuladores,0.03826159187670105,1.54048873973105,Subyacente,Mercancías,Mercancías no alimenticias
+Autobús foráneo,0.4689861731973126,1.3688953945500502,Subyacente,Servicios,Otros servicios
+Autobús urbano,0.758555108343304,1.1932194008091,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Automóviles,2.558958041308153,1.39423089288824,Subyacente,Mercancías,Mercancías no alimenticias
+Bicicletas,0.024470274159362405,1.26149599143971,Subyacente,Mercancías,Mercancías no alimenticias
+Colectivo,1.5995372692440277,1.22422923919266,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Cuotas de autopistas,0.058328381942488565,1.29893276723084,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Estacionamiento,0.03305987273962177,1.33447024673782,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Gasolina de alto octanaje,0.505342539740604,1.2546083774021901,No Subyacente,Energéticos y tarifas,Energéticos
+Gasolina de bajo octanaje,4.8244724155448795,1.26696806744506,No Subyacente,Energéticos y tarifas,Energéticos
+Lavado y engrasado de automóvil,0.0711234957671434,1.44848246511741,Subyacente,Servicios,Otros servicios
+Mantenimiento de automóvil,0.28942721560572804,1.4761536577359002,Subyacente,Servicios,Otros servicios
+Metro o transporte eléctrico,0.08667841290307697,1.07437055817765,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Motocicletas,0.27184032982359974,1.16856396772822,Subyacente,Mercancías,Mercancías no alimenticias
+Neumáticos,0.21435226508246502,1.40182621577885,Subyacente,Mercancías,Mercancías no alimenticias
+"Partes, accesorios y otras refacciones para vehículos",0.04774705113231626,1.38066082806421,Subyacente,Mercancías,Mercancías no alimenticias
+Reparación de automóvil,0.1176418740697877,1.38164725962306,Subyacente,Servicios,Otros servicios
+Taxi,0.9743641364038614,1.23157666192818,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Trámites vehiculares,0.14302337806351006,1.41248898785558,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Transporte aéreo,0.2776211531318735,1.5875775756702502,Subyacente,Servicios,Otros servicios
+Transporte escolar,0.031634028107249516,1.33127040310961,Subyacente,Servicios,Otros servicios
+Computadoras,0.1505176417363461,0.70015008190023,Subyacente,Mercancías,Mercancías no alimenticias
+Equipo terminal de comunicación,0.3384578304651973,0.94219198725618,Subyacente,Mercancías,Mercancías no alimenticias
+"Paquetes de internet, telefonía y televisión de paga",1.2346691613632983,0.8400175311320569,Subyacente,Servicios,Otros servicios
+"Reproductores de audio y video, y sus accesorios",0.05673111728917888,1.05788399883999,Subyacente,Mercancías,Mercancías no alimenticias
+Servicio de internet,0.43856834476885315,1.23400395797293,Subyacente,Servicios,Otros servicios
+Servicio de telefonía móvil,1.896445721557144,0.89114043740658,Subyacente,Servicios,Otros servicios
+Servicio de televisión de paga,0.2856864218631352,1.15659564841448,Subyacente,Servicios,Otros servicios
+Servicios de telefonía fija,0.03354908668920987,1.00600447242266,Subyacente,Servicios,Otros servicios
+Streaming de películas y música,0.10354615094045909,1.11243246649714,Subyacente,Servicios,Otros servicios
+Televisores,0.19933276597556987,0.873343459694927,Subyacente,Mercancías,Mercancías no alimenticias
+Alimento para mascotas,0.3686593009725587,1.3617633611477,Subyacente,Mercancías,Mercancías no alimenticias
+Artículos deportivos,0.01695551251086214,1.21098983666299,Subyacente,Mercancías,Mercancías no alimenticias
+Cine,0.1491402240731568,1.43268903298548,Subyacente,Servicios,Otros servicios
+Club deportivo,0.10135205655181241,1.22650038781452,Subyacente,Servicios,Otros servicios
+"Consolas, discos y descargas de videojuegos",0.052183100732168426,0.999582112054002,Subyacente,Mercancías,Mercancías no alimenticias
+Instrumentos musicales y descargas de audio y video,0.014898340384270663,1.30076307308276,Subyacente,Mercancías,Mercancías no alimenticias
+Juguetes y juegos de mesa,0.14794727879088085,1.2676496114856,Subyacente,Mercancías,Mercancías no alimenticias
+Libros de texto,0.1545866466758993,1.2771448129818601,Subyacente,Mercancías,Mercancías no alimenticias
+Material escolar,0.4486292912465462,1.3320221586959802,Subyacente,Mercancías,Mercancías no alimenticias
+Material y aparatos fotográficos,0.014694552976518286,1.18769373948203,Subyacente,Mercancías,Mercancías no alimenticias
+Museos y sitios culturales,0.028071030285874737,1.11243246649714,Subyacente,Servicios,Otros servicios
+Otros libros,0.04147126629739776,1.3412714112051298,Subyacente,Mercancías,Mercancías no alimenticias
+Paquetes para fiesta,0.6930532081156725,1.11243246649714,Subyacente,Servicios,Otros servicios
+Periódicos y revistas,0.016820488049513124,1.2238808793654998,Subyacente,Mercancías,Mercancías no alimenticias
+Plantas y flores,0.018645423188781034,1.57882227268437,Subyacente,Mercancías,Mercancías no alimenticias
+Servicios para mascotas,0.04967770257907526,1.38847023090421,Subyacente,Servicios,Otros servicios
+Servicios recreativos y centros nocturnos,0.021692226446344796,1.11243246649714,Subyacente,Servicios,Otros servicios
+Servicios turísticos en paquete,0.19106196600940206,1.29839503411523,Subyacente,Servicios,Otros servicios
+Carrera corta,0.028655169645883376,1.20110215436147,Subyacente,Servicios,Educación (Colegiaturas)
+Enseñanza adicional,0.13535048772964245,1.21379506021076,Subyacente,Servicios,Educación (Colegiaturas)
+Preescolar,0.15494777141135457,1.3134927458819001,Subyacente,Servicios,Educación (Colegiaturas)
+Preparatoria,0.4025711358201981,1.2768116960720999,Subyacente,Servicios,Educación (Colegiaturas)
+Primaria,0.43893307595615527,1.2977952266699402,Subyacente,Servicios,Educación (Colegiaturas)
+Secundaria,0.19335935187420197,1.26156558509595,Subyacente,Servicios,Educación (Colegiaturas)
+Universidad,1.133390984882293,1.27945032161079,Subyacente,Servicios,Educación (Colegiaturas)
+Barbacoa o birria,0.22373953957782003,1.49352714575296,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Carnitas,0.1991121760012765,1.47578466381566,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Hoteles,0.1738362195058722,1.2401257285829,Subyacente,Servicios,Otros servicios
+"Loncherías, fondas, torterías y taquerías",5.047900960154431,1.5569799239350801,Subyacente,Servicios,Otros servicios
+Otros alimentos cocinados,2.1484422797962823,1.44979466301922,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Pizzas,0.306809126079973,1.4173496397479999,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Pollos rostizados,0.6520807503256156,1.5094060218327399,Subyacente,Mercancías,"Alimentos, bebidas y tabaco"
+Restaurantes y similares,2.8005936096993413,1.46688045145522,Subyacente,Servicios,Otros servicios
+Seguro de automóvil,0.23782666981265235,1.69253178570228,Subyacente,Servicios,Otros servicios
+Aparatos eléctricos para el cuidado personal,0.021297343302449968,1.15872816917173,Subyacente,Mercancías,Mercancías no alimenticias
+Artículos de maquillaje,0.1457010908839016,1.40779029798285,Subyacente,Mercancías,Mercancías no alimenticias
+Bolsas y mochilas,0.10572873871481066,1.1718622416373699,Subyacente,Mercancías,Mercancías no alimenticias
+Corte de cabello,0.4629014192287604,1.47581584825157,Subyacente,Servicios,Otros servicios
+Crema y productos para higiene dental,0.4389617788535719,1.4317122095028099,Subyacente,Mercancías,Mercancías no alimenticias
+Cremas para la piel,0.3387607556562369,1.55268292390142,Subyacente,Mercancías,Mercancías no alimenticias
+Desodorantes personales,0.44654206851426265,1.51374205935235,Subyacente,Mercancías,Mercancías no alimenticias
+Expedición de documentos del sector público,0.08158198348174743,1.36759975145924,No Subyacente,Energéticos y tarifas,Tarifas autorizadas por el gobierno
+Guarderías y estancias infantiles,0.03347665162734654,1.25891079906378,Subyacente,Servicios,Educación (Colegiaturas)
+Jabón de tocador,0.3729638322100134,1.53729823253211,Subyacente,Mercancías,Mercancías no alimenticias
+Lociones y perfumes,0.39889903885264094,1.3219398457755,Subyacente,Mercancías,Mercancías no alimenticias
+Navajas y máquinas de afeitar,0.18117954930933192,1.35544799506983,Subyacente,Mercancías,Mercancías no alimenticias
+Otros artículos de tocador,0.12636540398680518,1.40434488743961,Subyacente,Mercancías,Mercancías no alimenticias
+Pañales,0.38475040897921475,1.4078869822017699,Subyacente,Mercancías,Mercancías no alimenticias
+Papel higiénico y pañuelos desechables,0.7466158579732209,1.4276497863761,Subyacente,Mercancías,Mercancías no alimenticias
+Productos para el cabello,0.6768839900015444,1.49931044801426,Subyacente,Mercancías,Mercancías no alimenticias
+"Relojes, joyas y bisutería",0.048995382871147825,1.24137663612428,Subyacente,Mercancías,Mercancías no alimenticias
+Sala de belleza y masajes,0.2603856724748371,1.3188888466477702,Subyacente,Servicios,Otros servicios
+Servicios funerarios,0.2855380377597609,1.3014973303413502,Subyacente,Servicios,Otros servicios
+Servicios profesionales,0.24471160614939474,1.39522234205611,Subyacente,Servicios,Otros servicios
+Toallas sanitarias,0.2257069045220215,1.2412828942360798,Subyacente,Mercancías,Mercancías no alimenticias
