@@ -281,12 +281,11 @@ with k_m3:
 st.markdown("<br>", unsafe_allow_html=True)
 
 # Configuración base para gráficos Plotly en Theme Light
-def aplicar_layout_light(fig, height=380, title=None):
+def aplicar_layout_light(fig, height=380):
     fig.update_layout(
         template='plotly_white',
-        title=dict(text=title, font=dict(color=COLOR_TEXTO, size=14)) if title else None,
         height=height,
-        margin=dict(l=15, r=15, t=35 if title else 20, b=15),
+        margin=dict(l=15, r=15, t=20, b=15),
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='#FFFFFF',
         font=dict(color=COLOR_TEXTO, family="Inter"),
@@ -517,7 +516,8 @@ with tab_tipo:
         hovertemplate='%{y:.2f}%<extra></extra>'
     ))
     fig_inc_tipo.update_layout(barmode='relative')
-    aplicar_layout_light(fig_inc_tipo, height=420, title=f"Contribución a la Variación Total {tipo_variacion} (pp)")
+    st.markdown(f"**Contribución a la Variación Total {tipo_variacion} (pp)**")
+    aplicar_layout_light(fig_inc_tipo, height=420)
     st.plotly_chart(fig_inc_tipo, width="stretch")
 
     st.markdown("---")
@@ -541,7 +541,8 @@ with tab_tipo:
             x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Servicios_{var_col_suffix}'],
             name='Servicios', line=dict(color="#48D1CC", width=1.5, dash='dash')
         ))
-        aplicar_layout_light(fig_sub_lines, height=320, title="Variación por Componente")
+        st.markdown("**Variación por Componente**")
+        aplicar_layout_light(fig_sub_lines, height=320)
         st.plotly_chart(fig_sub_lines, width="stretch")
         
         # Cálculo Incidencia Interna en Nivel 1 (Mercancias/Servicios respecto a Subyacente)
@@ -562,7 +563,8 @@ with tab_tipo:
             name='Subyacente (Var)', line=dict(color=COLOR_TEXTO, width=2)
         ))
         fig_sub_inc.update_layout(barmode='relative')
-        aplicar_layout_light(fig_sub_inc, height=320, title="Incidencia Interna de Componentes Subyacentes")
+        st.markdown("**Incidencia Interna de Componentes Subyacentes**")
+        aplicar_layout_light(fig_sub_inc, height=320)
         st.plotly_chart(fig_sub_inc, width="stretch")
 
     with ts_c2:
@@ -581,7 +583,8 @@ with tab_tipo:
             x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Energeticos_Tarifas_{var_col_suffix}'],
             name='Energéticos y Tarifas', line=dict(color="#8B5CF6", width=1.5, dash='dash')
         ))
-        aplicar_layout_light(fig_nosub_lines, height=320, title="Variación por Componente")
+        st.markdown("**Variación por Componente**")
+        aplicar_layout_light(fig_nosub_lines, height=320)
         st.plotly_chart(fig_nosub_lines, width="stretch")
         
         # Cálculo Incidencia Interna en Nivel 1 (Agropecuarios/Energéticos respecto a No Subyacente)
@@ -602,7 +605,8 @@ with tab_tipo:
             name='No Subyacente (Var)', line=dict(color=COLOR_TEXTO, width=2)
         ))
         fig_nosub_inc.update_layout(barmode='relative')
-        aplicar_layout_light(fig_nosub_inc, height=320, title="Incidencia Interna de Componentes No Subyacentes")
+        st.markdown("**Incidencia Interna de Componentes No Subyacentes**")
+        aplicar_layout_light(fig_nosub_inc, height=320)
         st.plotly_chart(fig_nosub_inc, width="stretch")
 
 # ------------------------------------------------------------------------------
@@ -659,7 +663,8 @@ with tab_comp:
         fig_merc.add_trace(go.Bar(x=df_niv_filtered['Fecha'], y=inc_int_mercno, name='Inc. Int. Merc. No Alim.', marker_color="#20B2AA"))
         fig_merc.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Mercancias_{var_col_suffix}'], name='Mercancías (Var)', mode='lines', line=dict(color=COLOR_TEXTO, width=2.5)))
         fig_merc.update_layout(barmode='relative')
-        aplicar_layout_light(fig_merc, height=350, title=f"Incidencia Interna Subcomponentes - Mercancías ({tipo_variacion})")
+        st.markdown(f"**Incidencia Interna Subcomponentes - Mercancías ({tipo_variacion})**")
+        aplicar_layout_light(fig_merc, height=350)
         st.plotly_chart(fig_merc, width="stretch")
     
     with g_s2:
@@ -673,13 +678,15 @@ with tab_comp:
         fig_serv.add_trace(go.Bar(x=df_niv_filtered['Fecha'], y=inc_int_otr, name='Inc. Int. Otros Serv.', marker_color="#7FFFD4"))
         fig_serv.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Servicios_{var_col_suffix}'], name='Servicios (Var)', mode='lines', line=dict(color=COLOR_TEXTO, width=2.5)))
         fig_serv.update_layout(barmode='relative')
-        aplicar_layout_light(fig_serv, height=350, title=f"Incidencia Interna Subcomponentes - Servicios ({tipo_variacion})")
+        st.markdown(f"**Incidencia Interna Subcomponentes - Servicios ({tipo_variacion})**")
+        aplicar_layout_light(fig_serv, height=350)
         st.plotly_chart(fig_serv, width="stretch")
         
     fig_inc_sub = go.Figure()
     fig_inc_sub.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Mercancias_{inc_col_suffix}'], mode='lines', name='Inc. Mercancías', line=dict(color="#20B2AA", width=2)))
     fig_inc_sub.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Servicios_{inc_col_suffix}'], mode='lines', name='Inc. Servicios', line=dict(color="#48D1CC", width=2)))
-    aplicar_layout_light(fig_inc_sub, height=300, title=f"Incidencias Componentes Subyacentes ({'Anual' if 'Anual' in tipo_variacion else 'Mensual'})")
+    st.markdown(f"**Incidencias Componentes Subyacentes ({'Anual' if 'Anual' in tipo_variacion else 'Mensual'})**")
+    aplicar_layout_light(fig_inc_sub, height=300)
     st.plotly_chart(fig_inc_sub, width="stretch")
 
     st.markdown("---")
@@ -700,7 +707,8 @@ with tab_comp:
         fig_agro.add_trace(go.Bar(x=df_niv_filtered['Fecha'], y=inc_int_pecu, name='Inc. Int. Pecuarios', marker_color="#1D4ED8"))
         fig_agro.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Agropecuarios_{var_col_suffix}'], name='Agropecuarios (Var)', mode='lines', line=dict(color=COLOR_TEXTO, width=2.5)))
         fig_agro.update_layout(barmode='relative')
-        aplicar_layout_light(fig_agro, height=350, title=f"Incidencia Interna Subcomponentes - Agropecuarios ({tipo_variacion})")
+        st.markdown(f"**Incidencia Interna Subcomponentes - Agropecuarios ({tipo_variacion})**")
+        aplicar_layout_light(fig_agro, height=350)
         st.plotly_chart(fig_agro, width="stretch")
     
     with g_ns2:
@@ -712,13 +720,15 @@ with tab_comp:
         fig_ener.add_trace(go.Bar(x=df_niv_filtered['Fecha'], y=inc_int_tarif, name='Inc. Int. Tarifas', marker_color="#6D28D9"))
         fig_ener.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Energeticos_Tarifas_{var_col_suffix}'], name='Energ. y Tarifas (Var)', mode='lines', line=dict(color=COLOR_TEXTO, width=2.5)))
         fig_ener.update_layout(barmode='relative')
-        aplicar_layout_light(fig_ener, height=350, title=f"Incidencia Interna Subcomponentes - Energ. y Tarifas ({tipo_variacion})")
+        st.markdown(f"**Incidencia Interna Subcomponentes - Energ. y Tarifas ({tipo_variacion})**")
+        aplicar_layout_light(fig_ener, height=350)
         st.plotly_chart(fig_ener, width="stretch")
 
     fig_inc_nosub = go.Figure()
     fig_inc_nosub.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Agropecuarios_{inc_col_suffix}'], mode='lines', name='Inc. Agropecuarios', line=dict(color="#3B82F6", width=2)))
     fig_inc_nosub.add_trace(go.Scatter(x=df_niv_filtered['Fecha'], y=df_niv_filtered[f'Energeticos_Tarifas_{inc_col_suffix}'], mode='lines', name='Inc. Energ. y Tarifas', line=dict(color="#8B5CF6", width=2)))
-    aplicar_layout_light(fig_inc_nosub, height=300, title=f"Incidencias Componentes No Subyacentes ({'Anual' if 'Anual' in tipo_variacion else 'Mensual'})")
+    st.markdown(f"**Incidencias Componentes No Subyacentes ({'Anual' if 'Anual' in tipo_variacion else 'Mensual'})**")
+    aplicar_layout_light(fig_inc_nosub, height=300)
     st.plotly_chart(fig_inc_nosub, width="stretch")
 
 # ------------------------------------------------------------------------------
@@ -748,7 +758,8 @@ with tab_subcomp:
             df_heat_var[cols_heat],
             color_continuous_scale=["#16A34A", "#F8FAFC", "#DC2626"], aspect="auto"
         )
-        aplicar_layout_light(fig_heat_var, height=420, title=f"Mapa de Variación {tipo_variacion}")
+        st.markdown(f"**Mapa de Variación {tipo_variacion}**")
+        aplicar_layout_light(fig_heat_var, height=420)
         st.plotly_chart(fig_heat_var, width="stretch")
         
         df_heat_inc = df_heat_temp.set_index('Periodo')[[f"{s}_{inc_col_suffix}" for s in subcomps]].T
@@ -758,7 +769,8 @@ with tab_subcomp:
             df_heat_inc[cols_heat],
             color_continuous_scale=["#16A34A", "#F8FAFC", "#DC2626"], aspect="auto"
         )
-        aplicar_layout_light(fig_heat_inc, height=420, title=f"Mapa de Incidencia ({'Anual' if 'Anual' in tipo_variacion else 'Mensual'})")
+        st.markdown(f"**Mapa de Incidencia ({'Anual' if 'Anual' in tipo_variacion else 'Mensual'})**")
+        aplicar_layout_light(fig_heat_inc, height=420)
         st.plotly_chart(fig_heat_inc, width="stretch")
 
         st.markdown("---")
@@ -851,7 +863,8 @@ with tab_art:
             color_discrete_sequence=['#DC2626'], text_auto='.3f'
         )
         fig_alza.update_layout(yaxis={'autorange': 'reversed'})
-        aplicar_layout_light(fig_alza, height=310, title=f"Mayores Presiones al Alza ({fecha_max_str})")
+        st.markdown(f"**Mayores Presiones al Alza ({fecha_max_str})**")
+        aplicar_layout_light(fig_alza, height=310)
         st.plotly_chart(fig_alza, width="stretch")
         
     with r2:
@@ -860,7 +873,8 @@ with tab_art:
             top_baja, x=col_rank, y='Concepto', orientation='h',
             color_discrete_sequence=['#16A34A'], text_auto='.3f'
         )
-        aplicar_layout_light(fig_baja, height=310, title=f"Mayores Contribuciones a la Baja ({fecha_max_str})")
+        st.markdown(f"**Mayores Contribuciones a la Baja ({fecha_max_str})**")
+        aplicar_layout_light(fig_baja, height=310)
         st.plotly_chart(fig_baja, width="stretch")
         
     st.markdown("---")
@@ -900,7 +914,8 @@ with tab_art:
             yaxis=dict(title="Variación Anual (%)"),
             yaxis2=dict(title="Incidencia (pp)", overlaying='y', side='right', showgrid=False)
         )
-        aplicar_layout_light(fig_art_ts, height=380, title=f"Serie Histórica e Incidencia: {concepto_sel}")
+        st.markdown(f"**Serie Histórica e Incidencia: {concepto_sel}**")
+        aplicar_layout_light(fig_art_ts, height=380)
         st.plotly_chart(fig_art_ts, width="stretch")
         
         with st.expander(f"Ver matriz de datos históricos de {concepto_sel}"):
