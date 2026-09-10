@@ -323,7 +323,7 @@ tab_gen, tab_tipo, tab_comp, tab_subcomp, tab_art = st.tabs([
     "1. Subyacente vs. No Subyacente",
     "2. Componentes Sectoriales",
     "3. Subcomponentes",
-    "4. Desglose Fino (292 Genéricos)"
+    "4. Genéricos"
 ])
 
 # ------------------------------------------------------------------------------
@@ -802,7 +802,7 @@ with tab_subcomp:
             """, unsafe_allow_html=True)
 
 # ------------------------------------------------------------------------------
-# TAB 4: DESGLOSE FINO (292 GENÉRICOS)
+# TAB 4: GENÉRICOS
 # ------------------------------------------------------------------------------
 with tab_art:
     st.markdown("#### Explorador a Nivel Genérico (Canasta Detallada)")
