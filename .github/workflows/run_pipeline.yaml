@@ -1,0 +1,62 @@
+name: Update Inflation Dashboard
+
+on:
+  schedule:
+    # Runs every day at 12:01 UTC (06:01 AM CST)
+    - cron: '1 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  check_date:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.date_check.outputs.run_pipeline }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check against INEGI calendar
+        id: date_check
+        run: |
+          # Force the timezone to match INEGI's location
+          TODAY=$(TZ='America/Mexico_City' date +'%Y-%m-%d')
+          echo "Today is $TODAY in Mexico City."
+          
+          if grep -Fxq "$TODAY" fechas_inegi.txt; then
+            echo "run_pipeline=true" >> "$GITHUB_OUTPUT"
+            echo "Match found! The pipeline will run today."
+          else
+            echo "run_pipeline=false" >> "$GITHUB_OUTPUT"
+            echo "Not a publication date. Pipeline skipped."
+          fi
+
+  run_pipeline:
+    needs: check_date
+    if: needs.check_date.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Pipeline
+        env:
+          GREEN_API_INSTANCE: ${{ secrets.GREEN_API_INSTANCE }}
+          GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
+          WHATSAPP_GROUP_ID: ${{ secrets.WHATSAPP_GROUP_ID }}
+        run: python main_pipeline.py
+
+      - name: Commit updated data
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add data/intermediate/
+          git commit -m "Update intermediate data for $TODAY" || echo "No changes to commit"
+          git push
