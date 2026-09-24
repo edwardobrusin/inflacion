@@ -1027,6 +1027,7 @@ periodo_largo = f"{mes_largo} {anio_corte}"
 
 ruta_pdf = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
+    "pdf",
     "resumen_inflacion.pdf"
 )
 
