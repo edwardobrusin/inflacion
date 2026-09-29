@@ -55,6 +55,7 @@ jobs:
 
       - name: Commit updated data
         run: |
+          TODAY=$(TZ='America/Mexico_City' date +'%Y-%m-%d')
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
           git add data/intermediate/
