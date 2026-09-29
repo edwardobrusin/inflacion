@@ -29,7 +29,6 @@ def run_script(script_path):
 def main():
     scripts = [
         "consulta_ccif.py",
-        "clean_pond_v2.py",
         "inf_inc_v2.py",
         "generar_pdf.py",
         "send_whatsapp.py"
