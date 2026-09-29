@@ -52,6 +52,30 @@ jobs:
       - name: Install Playwright Chromium browser
         run: python -m playwright install chromium
 
+      - name: Start Streamlit Dashboard in background
+        run: |
+          # 1. Evitar el prompt interactivo de correo electrónico de Streamlit en CI
+          mkdir -p ~/.streamlit
+          echo -e "[general]\nemail = \"\"" > ~/.streamlit/credentials.toml
+
+          # 2. Iniciar Streamlit en segundo plano
+          python -m streamlit run resumen.py --server.port 8501 --server.headless true > streamlit.log 2>&1 &
+          
+          # 3. Esperar a que el servidor responda (hasta 60 segundos)
+          echo "⏳ Esperando a que Streamlit esté listo..."
+          for i in {1..30}; do
+            if curl -s -o /dev/null -w "%{http_code}" http://localhost:8501 | grep -q "200"; then
+              echo "✅ Streamlit está corriendo en el puerto 8501"
+              exit 0
+            fi
+            sleep 2
+          done
+          
+          echo "❌ Streamlit no logró iniciar en 60 segundos. Revisa el log:"
+          cat streamlit.log
+          exit 1
+      # 👆 FIN DEL NUEVO PASO 👆
+
       - name: Run Pipeline
         env:
           GREEN_API_INSTANCE: ${{ secrets.GREEN_API_INSTANCE }}
