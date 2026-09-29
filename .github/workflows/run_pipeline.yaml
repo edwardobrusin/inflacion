@@ -46,6 +46,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install Playwright OS dependencies
+        run: sudo python -m playwright install-deps chromium
+
+      - name: Install Playwright Chromium browser
+        run: python -m playwright install chromium
+
       - name: Run Pipeline
         env:
           GREEN_API_INSTANCE: ${{ secrets.GREEN_API_INSTANCE }}
