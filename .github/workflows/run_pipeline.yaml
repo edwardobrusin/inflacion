@@ -2,8 +2,8 @@ name: Update Inflation Dashboard
 
 on:
   schedule:
-    # Runs every day at 12:01 UTC (06:01 AM CST)
-    - cron: '1 12 * * *'
+    # Runs every day at 19:00 UTC (01:00 PM CST)
+    - cron: '1 19 * * *'
   workflow_dispatch:
 
 jobs:
