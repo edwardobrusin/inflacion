@@ -20,21 +20,37 @@ def generar_mensaje():
     mes = meses[fecha.month - 1]
     anio = fecha.year
 
+    # Calcular YTD
+    dec_prev_year = f"{anio-1}-12-01"
+    # Puede ser que el formato en el CSV sea YYYY-MM-DD
+    prev_niv_df = df_niv[df_niv['Fecha'] == dec_prev_year]
+    
+    if not prev_niv_df.empty:
+        prev_niv = prev_niv_df.iloc[0]
+        ytd_general = (ultimo_niv['INPC_General'] / prev_niv['INPC_General'] - 1) * 100
+        ytd_sub = (ultimo_niv['Subyacente'] / prev_niv['Subyacente'] - 1) * 100
+        ytd_nosub = (ultimo_niv['No_Subyacente'] / prev_niv['No_Subyacente'] - 1) * 100
+    else:
+        # Fallback if december prev year not found
+        ytd_general = ytd_sub = ytd_nosub = 0.0
+
     # Extraer los genéricos del periodo más reciente
     fecha_max = df_gen['Fecha'].max()
     df_gen_ultimo = df_gen[df_gen['Fecha'] == fecha_max]
     
     # Ordenar por incidencia anual para obtener el Top 3 al alza y a la baja
-    alza = df_gen_ultimo.sort_values('Inc_Anual', ascending=False).head(3)['Concepto'].tolist()
-    baja = df_gen_ultimo.sort_values('Inc_Anual', ascending=True).head(3)['Concepto'].tolist()
+    top_alza = df_gen_ultimo.sort_values('Inc_Anual', ascending=False).head(3)
+    alza_str_list = [f"{row['Concepto']} ({row['Inc_Anual']:.3f})" for _, row in top_alza.iterrows()]
+    
+    top_baja = df_gen_ultimo.sort_values('Inc_Anual', ascending=True).head(3)
+    baja_str_list = [f"{row['Concepto']} ({row['Inc_Anual']:.3f})" for _, row in top_baja.iterrows()]
 
-    # Construir el cuerpo del mensaje en formato WhatsApp (asteriscos para negritas)
-    msg = f"Reporte de Inflación ({mes} {anio})\n\n"
-    msg += f"- Inflación General: *{ultimo_niv['INPC_General_Var_Anual']:.2f}%* Anual (*{ultimo_niv['INPC_General_Var_Mensual']:.2f}%* Mensual)\n"
-    msg += f"- Inflación Subyacente: *{ultimo_niv['Subyacente_Var_Anual']:.2f}%* Anual (*{ultimo_niv['Subyacente_Var_Mensual']:.2f}%* Mensual)\n"
-    msg += f"- Inflación No Subyacente: *{ultimo_niv['No_Subyacente_Var_Anual']:.2f}%* Anual (*{ultimo_niv['No_Subyacente_Var_Mensual']:.2f}%* Mensual)\n"
-    msg += f"- Genéricos de Mayor Incidencia Anual al *Alza*: {'; '.join(alza)}.\n"
-    msg += f"- Genéricos de Mayor Incidencia Anual a la *Baja*: {'; '.join(baja)}."
+    msg = f"Reporte de Inflación ({mes} {anio})\n"
+    msg += f"- General: {ultimo_niv['INPC_General_Var_Anual']:.2f}% YoY | {ultimo_niv['INPC_General_Var_Mensual']:.2f}% MoM | {ytd_general:.2f}% YTD\n"
+    msg += f"- Subyacente: {ultimo_niv['Subyacente_Var_Anual']:.2f}% YoY | {ultimo_niv['Subyacente_Var_Mensual']:.2f}% MoM | {ytd_sub:.2f}% YTD\n"
+    msg += f"- No Subyacente: {ultimo_niv['No_Subyacente_Var_Anual']:.2f}% YoY | {ultimo_niv['No_Subyacente_Var_Mensual']:.2f}% MoM | {ytd_nosub:.2f}% YTD\n"
+    msg += f"- Mayor Incidencia Anual al Alza: {'; '.join(alza_str_list)}.\n"
+    msg += f"- Mayor Incidencia Anual a la Baja: {'; '.join(baja_str_list)}."
     
     return msg
 
