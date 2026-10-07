@@ -259,11 +259,35 @@ def generar_pdf_resumen(
         print(f"✅ ¡Listo! PDF generado en: {os.path.abspath(output_path)}")
 
 
+import pandas as pd
+
+def obtener_nombre_pdf() -> str:
+    # Ruta asumiendo que se corre desde la raíz del proyecto
+    csv_path = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "data", "intermediate", "niveles.csv"
+    )
+    df_niv = pd.read_csv(csv_path)
+    ultimo_niv = df_niv.iloc[-1]
+    
+    fecha_str = str(ultimo_niv['Fecha']).strip().split(" ")[0].replace("-", "/")
+    try:
+        fecha = pd.to_datetime(fecha_str, format="%d/%m/%Y")
+    except ValueError:
+        fecha = pd.to_datetime(fecha_str, format="%Y/%m/%d")
+
+    meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    mes = meses[fecha.month - 1]
+    anio = fecha.year
+    
+    return f"Inflación_{mes}_{anio}.pdf"
+
 if __name__ == "__main__":
+    nombre_archivo = obtener_nombre_pdf()
     salida = os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
         "pdf",
-        "resumen_inflacion.pdf"
+        nombre_archivo
     )
 
     generar_pdf_resumen(

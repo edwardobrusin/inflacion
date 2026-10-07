@@ -61,8 +61,23 @@ def send_pdf():
     url = f"https://api.green-api.com/waInstance{instance_id}/sendFileByUpload/{api_token}"
 
     caption_personalizado = generar_mensaje()
+    
+    # Determinar nombre del archivo PDF a partir del CSV
+    df_niv = pd.read_csv('data/intermediate/niveles.csv')
+    ultimo_niv = df_niv.iloc[-1]
+    fecha_str = str(ultimo_niv['Fecha']).strip().split(" ")[0].replace("-", "/")
+    try:
+        fecha = pd.to_datetime(fecha_str, format="%d/%m/%Y")
+    except ValueError:
+        fecha = pd.to_datetime(fecha_str, format="%Y/%m/%d")
+
+    meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    mes = meses[fecha.month - 1]
+    anio = fecha.year
+    nombre_archivo = f"Inflación_{mes}_{anio}.pdf"
+
     payload = {'chatId': chat_id, 'caption': caption_personalizado}
-    files = {'file': ('resumen_inflacion.pdf', open('pdf/resumen_inflacion.pdf', 'rb'), 'application/pdf')}
+    files = {'file': (nombre_archivo, open(f'pdf/{nombre_archivo}', 'rb'), 'application/pdf')}
 
     response = requests.post(url, data=payload, files=files)
     response.raise_for_status()

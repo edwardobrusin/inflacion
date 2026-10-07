@@ -1025,10 +1025,12 @@ periodo_largo = f"{mes_largo} {anio_corte}"
 # BOTÓN FLOTANTE DE DESCARGA
 # ==============================================================================
 
+nombre_archivo_pdf = f"Inflación_{mes_largo.capitalize()}_{anio_corte}.pdf"
+
 ruta_pdf = os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
     "pdf",
-    "resumen_inflacion.pdf"
+    nombre_archivo_pdf
 )
 
 if os.path.exists(ruta_pdf):
@@ -1069,7 +1071,7 @@ if os.path.exists(ruta_pdf):
 </style>
 
 <a href="data:application/pdf;base64,{base64_pdf}"
-   download="Resumen_Inflacion.pdf"
+   download="{nombre_archivo_pdf}"
    class="floating-download-btn"
    title="Descargar PDF">
     {svg_icon}
