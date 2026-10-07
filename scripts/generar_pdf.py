@@ -20,6 +20,13 @@ def generar_pdf_resumen(
     out_dir = os.path.dirname(output_path)
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
+        # Limpiar la carpeta pdf antes de generar el nuevo
+        for f in os.listdir(out_dir):
+            if f.endswith('.pdf'):
+                try:
+                    os.remove(os.path.join(out_dir, f))
+                except OSError:
+                    pass
 
     with sync_playwright() as p:
         print("🤖 Iniciando navegador Chromium (Headless)...")

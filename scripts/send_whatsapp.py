@@ -76,8 +76,13 @@ def send_pdf():
     anio = fecha.year
     nombre_archivo = f"Inflación_{mes}_{anio}.pdf"
 
-    payload = {'chatId': chat_id, 'caption': caption_personalizado}
-    files = {'file': (nombre_archivo, open(f'pdf/{nombre_archivo}', 'rb'), 'application/pdf')}
+    payload = {
+        'chatId': chat_id, 
+        'caption': caption_personalizado,
+        'fileName': nombre_archivo
+    }
+    # Usamos un nombre ASCII en 'files' para evitar que requests corrompa los acentos en el multipart/form-data
+    files = {'file': ('reporte.pdf', open(f'pdf/{nombre_archivo}', 'rb'), 'application/pdf')}
 
     response = requests.post(url, data=payload, files=files)
     response.raise_for_status()
