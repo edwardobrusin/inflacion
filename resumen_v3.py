@@ -1289,7 +1289,7 @@ col_title_32, col_note_32 = st.columns(2)
 with col_title_32:
     st.markdown('<div class="chart-title" style="margin-bottom: 4px;">Incidencias Históricas por Subcomponente</div>', unsafe_allow_html=True)
 with col_note_32:
-    st.markdown('<div style="font-size: 0.70rem; color: #000000; text-align: justify; margin-top: 0px; margin-left: 45px;"><b>Nota:</b> El rubro "Otros servicios" abarca salud, transporte y cuidado automotriz, conectividad (internet/telefonía), turismo, alimentos preparados y servicios del hogar.</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-size: 0.70rem; color: #000000; text-align: justify; margin-top: 0px; margin-left: 45px;"><b>Nota:</b> El rubro "Otros servicios" abarca salud, transporte y mantenimiento automotriz, conectividad (internet/telefonía), turismo, alimentos preparados y servicios del hogar.</div>', unsafe_allow_html=True)
 
 col_chart_32, col_leg_32 = st.columns([3, 1])
 
